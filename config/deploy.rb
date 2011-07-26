@@ -14,7 +14,7 @@ set :copy_exclude, ["/.git/", "/.gitignore", "/Capfile", "/config/", "/config.ya
 #ROLES
 #========================
 role :web, "#{appweb}"
-set :deploy_to, "/var/www/mikhnova.ru/#{application}/www"
+set :deploy_to, "/var/www/mikhnova.ru/#{application}"
 set :deploy_user, "pomeo"
 set :deploy_group, "pomeo"
 
