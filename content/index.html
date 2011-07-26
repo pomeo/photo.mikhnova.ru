@@ -1,83 +1,14 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-	<title>flickr.com/photos/moza_casadera</title> 
-	<meta name="author" content="Sergey Ovechkin - http://sovechkin.com" />
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />	
-	<link rel="stylesheet" href="stylesheets/jquery.mobile.css" />
-	<link href="stylesheets/photoswipe.css" type="text/css" rel="stylesheet" />
-	<style type="text/css">
-	  div.gallery-row:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
-		div.gallery-item { float:left; width:33.333333%; }
-		div.gallery-item a { display:block; margin:5px; border:1px solid #3c3c3c; }
-		div.gallery-item img { display:block; width:100%; height:auto; }
-		#Gallery1 .ui-content, #Gallery2 .ui-content { overflow:hidden; }
-	</style>
-	<script type="text/javascript" src="javascripts/jquery-1.6.2.js"></script>
-	<script type="text/javascript" src="javascripts/jquery.mobile.js"></script>
-	<script type="text/javascript" src="javascripts/simple-inheritance.js"></script>
-	<script type="text/javascript" src="javascripts/jquery.animate.js"></script>
-	<script type="text/javascript" src="javascripts/photoswipe.jquery.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('div.gallery-page').live('pageshow', function(e){
-				$("div.gallery a", e.target).photoSwipe();
-				return true;
-			})
-		});
-	</script>
-  </head> 
-  <body>
-    <div data-role="page" id="Gallery1" class="gallery-page">
-      <div data-role="header">
-        <h1>Elena Mikhnova</h1>
-        <a href="#Gallery1" data-role="button" data-icon="home">home</a>
-        <!--a href="#Gallery2" data-role="button" data-icon="forward" data-iconpos="right">forward</a-->
-      </div>
-      <div data-role="content">
-        <div class="gallery">
-          <div class="gallery-row">
-            <div class="gallery-item"><a href="images/1.jpg" rel="external"><img src="images/1-thumb.jpg" alt="spring cat" /></a></div>
-            <div class="gallery-item"><a href="images/2.jpg" rel="external"><img src="images/2-thumb.jpg" alt="birdie" /></a></div>
-            <div class="gallery-item"><a href="images/3.jpg" rel="external"><img src="images/3-thumb.jpg" alt="orchid" /></a></div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-item"><a href="images/4.jpg" rel="external"><img src="images/4-thumb.jpg" alt="sunny day in forest" /></a></div>
-            <div class="gallery-item"><a href="images/5.jpg" rel="external"><img src="images/5-thumb.jpg" alt="curves" /></a></div>
-            <div class="gallery-item"><a href="images/6.jpg" rel="external"><img src="images/6-thumb.jpg" alt="ready,steady,GO!" /></a></div>
-          </div>
-          <div class="gallery-row">
-            <div class="gallery-item"><a href="images/7.jpg" rel="external"><img src="images/7-thumb.jpg" alt="Ice rain 3" /></a></div>
-            <div class="gallery-item"><a href="images/8.jpg" rel="external"><img src="images/8-thumb.jpg" alt="ice rain 2" /></a></div>
-            <div class="gallery-item"><a href="images/9.jpg" rel="external"><img src="images/9-thumb.jpg" alt="ice rain 1" /></a></div>
-          </div>		
-        </div>		
-      </div>	
-    </div>
-    <!-- div data-role="page" id="Gallery2" class="gallery-page">
-      <div data-role="header">
-        <h1>Elena Mikhnova</h1>
-        <a href="#Gallery1" data-role="button" data-icon="back" data-direction="reverse">back</a>
-      </div>
-      <div data-role="content">		
-        <div class="gallery">		
-          <div class="gallery-row">		
-            <div class="gallery-item"><a href="images/full/010.jpg" rel="external"><img src="images/thumb/010.jpg" alt="Image 010" /></a></div>				
-            <div class="gallery-item"><a href="images/full/011.jpg" rel="external"><img src="images/thumb/011.jpg" alt="Image 011" /></a></div>				
-            <div class="gallery-item"><a href="images/full/012.jpg" rel="external"><img src="images/thumb/012.jpg" alt="Image 012" /></a></div>		
-          </div>		
-          <div class="gallery-row">		
-            <div class="gallery-item"><a href="images/full/013.jpg" rel="external"><img src="images/thumb/013.jpg" alt="Image 013" /></a></div>				
-            <div class="gallery-item"><a href="images/full/014.jpg" rel="external"><img src="images/thumb/014.jpg" alt="Image 014" /></a></div>				
-            <div class="gallery-item"><a href="images/full/015.jpg" rel="external"><img src="images/thumb/015.jpg" alt="Image 015" /></a></div>		
-          </div>			
-          <div class="gallery-row">	
-            <div class="gallery-item"><a href="images/full/016.jpg" rel="external"><img src="images/thumb/016.jpg" alt="Image 016" /></a></div>				
-            <div class="gallery-item"><a href="images/full/017.jpg" rel="external"><img src="images/thumb/017.jpg" alt="Image 017" /></a></div>				
-            <div class="gallery-item"><a href="images/full/018.jpg" rel="external"><img src="images/thumb/018.jpg" alt="Image 018" /></a></div>		
-          </div>		
-        </div>		
-      </div>
-    </div-->
-  </body>
-</html>
+--- 
+title: Home
+---
+
+<h1>A Brand New nanoc Site</h1>
+
+<p>You’ve just created a new nanoc site. The page you are looking at right now is the home page for your site. To get started, consider replacing this default homepage with your own customized homepage. Some pointers on how to do so:</p>
+
+<ul>
+  <li><p><strong>Change this page’s content</strong> by editing the “index.html” file in the “content” directory. This is the actual page content, and therefore doesn’t include the header, sidebar or style information (those are part of the layout).</p></li>
+  <li><p><strong>Change the layout</strong>, which is the “default.html” file in the “layouts” directory, and create something unique (and hopefully less bland).</p></li>
+</ul>
+
+<p>If you need any help with customizing your nanoc web site, be sure to check out the documentation (see sidebar), and be sure to subscribe to the discussion group (also see sidebar). Enjoy!</p>
