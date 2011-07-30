@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+	<title>flickr.com/photos/moza_casadera</title> 
+	<meta name="author" content="Sergey Ovechkin - http://sovechkin.com" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />	
+	<link rel="stylesheet" href="stylesheets/jquery.mobile.css" />
+	<link href="stylesheets/photoswipe.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+	  div.gallery-row:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
+		div.gallery-item { float:left; width:33.333333%; }
+		div.gallery-item a { display:block; margin:5px; border:1px solid #3c3c3c; }
+		div.gallery-item img { display:block; width:100%; height:auto; }
+		#Gallery1 .ui-content, #Gallery2 .ui-content { overflow:hidden; }
+	</style>
+	<script type="text/javascript" src="javascripts/jquery-1.6.2.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.mobile.js"></script>
+	<script type="text/javascript" src="javascripts/simple-inheritance.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.animate.js"></script>
+	<script type="text/javascript" src="javascripts/photoswipe.jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('div.gallery-page').live('pageshow', function(e){
+				$("div.gallery a", e.target).photoSwipe();
+				return true;
+			})
+		});
+	</script>
+  </head> 
+  <body>
+<%= yield %>
+  </body>
+</html>
