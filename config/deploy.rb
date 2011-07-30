@@ -9,7 +9,7 @@ set :port, 2222
 set :use_sudo, false
 set :deploy_via, :copy
 set :scm, :git
-set :copy_exclude, ["/.git/", "/.gitignore", "/Capfile", "/config/", "/config.yaml", "/Rakefile", "Rules", "/tmp/", "/mkmf.log"]
+set :copy_exclude, ["/.git/", "/.gitignore", "/Capfile", "/config/", "/Rakefile", "/tmp/", "/mkmf.log"]
 #========================
 #ROLES
 #========================
