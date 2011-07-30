@@ -6,8 +6,9 @@
         <a href="#Gallery1" data-role="button" data-icon="home">home</a>
         <% elsif $r[$c] != nil %>
         <a href="#Gallery<%= $p-1 %>" data-role="button" data-icon="back" data-direction="reverse">back</a>
+        <% else %>
         <% end %>
-        <% if ($r[$c]!=nil)&&($r[$c-9]!=nil) %>
+        <% if ($r[$c]!=nil)&&($c-9>=0) %>
         <a href="#Gallery<%= $p+1 %>" data-role="button" data-icon="forward" data-iconpos="right">forward</a>
         <% end %>
       </div>
